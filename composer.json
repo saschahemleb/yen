@@ -35,8 +35,10 @@
     "scripts": {
         "lint": "pint --preset per",
         "test:lint": "pint --test --preset per",
+        "test:arch": "pest --testsuite Arch",
         "test": [
-            "@test:lint"
+            "@test:lint",
+            "@test:arch"
         ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",

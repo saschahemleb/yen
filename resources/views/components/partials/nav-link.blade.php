@@ -2,8 +2,8 @@
 
 @php
     $classes = request()->fullUrlIs($href)
-                ? 'border-zinc-400 pointer-events-none'
-                : 'text-zinc-500 hover:border-zinc-300 hover:pl-6 focus:pl-6';
+                ? 'border-zinc-400 pointer-events-none dark:border-zinc-800'
+                : 'text-zinc-500 hover:border-zinc-300 hover:pl-6 focus:pl-6 dark:hover:border-zinc-700';
 @endphp
 
 <a {{ $attributes->merge([

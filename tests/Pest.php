@@ -41,7 +41,7 @@ expect()->extend('toBeOne', function () {
 |
 */
 
-function something()
+function modules(): \Illuminate\Support\Collection
 {
-    // ..
+    return collect(['App', 'Auth', 'Transaction', 'Budget']);
 }

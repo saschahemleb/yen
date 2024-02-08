@@ -2,7 +2,9 @@
 
 namespace Yen\Modules\App\Http\Controllers;
 
-class DashboardController
+use Yen\Http\Controllers\Controller;
+
+class DashboardController extends Controller
 {
     public function show()
     {

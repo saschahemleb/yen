@@ -4,9 +4,10 @@ namespace Yen\Modules\Auth\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Yen\Http\Controllers\Controller;
 use Yen\Modules\Auth\Actions\CreateNewUser;
 
-class RegisterController
+class RegisterController extends Controller
 {
     public function create()
     {

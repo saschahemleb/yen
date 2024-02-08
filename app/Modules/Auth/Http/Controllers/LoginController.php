@@ -5,8 +5,9 @@ namespace Yen\Modules\Auth\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
+use Yen\Http\Controllers\Controller;
 
-class LoginController
+class LoginController extends Controller
 {
     public function create()
     {

@@ -3,6 +3,7 @@
 namespace Yen\Modules\Transaction;
 
 use Illuminate\Support\ServiceProvider;
+use Yen\Modules\Transaction\Console\Commands\ImportCommand;
 
 class TransactionServiceProvider extends ServiceProvider
 {
@@ -12,5 +13,14 @@ class TransactionServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__ . '/Views', 'transaction');
         $this->mergeConfigFrom(__DIR__ . '/config.php', 'transaction');
         $this->loadRoutesFrom(__DIR__ . '/routes.php');
+    }
+
+    public function boot(): void
+    {
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                ImportCommand::class
+            ]);
+        }
     }
 }

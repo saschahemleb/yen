@@ -1,4 +1,4 @@
-<nav {{ $attributes->merge(['class' => 'h-screen p-5 bg-gradient-to-b from-zinc-200 to-zinc-100']) }}>
+<nav {{ $attributes->merge(['class' => 'h-screen p-5 bg-gradient-to-b from-zinc-200 to-zinc-100 dark:from-zinc-900 dark:to-zinc-900']) }}>
     <div class="flex flex-row justify-around">
         <p class="text-3xl font-semibold select-none">Yen</p>
     </div>

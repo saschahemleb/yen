@@ -10,7 +10,7 @@
     };
 @endphp
 
-<svg class="{{ $size }}" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1" fill="none"
+<svg {{ $attributes->class($size) }} viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1" fill="none"
      stroke-linecap="round" stroke-linejoin="round">
     @switch($icon)
         @case('logo')
@@ -44,6 +44,10 @@
             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
             <polyline points="17 8 12 3 7 8"></polyline>
             <line x1="12" y1="3" x2="12" y2="15"></line>
+            @break
+
+        @case('activity')
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
             @break
 
         @default

@@ -1,8 +1,8 @@
 @php
     $type = match ($type ?? 'primary') {
         'tertiary' => '',
-        'secondary' => 'bg-white border border-zinc-400 hover:shadow-md focus:shadow-md',
-        default =>  'bg-white border border-orange-300 hover:shadow-md focus:shadow-md',
+        'secondary' => 'bg-white border border-zinc-400 hover:shadow-md focus:shadow-md dark:bg-zinc-900 dark:border-zinc-700',
+        default =>  'bg-white border border-orange-300 hover:shadow-md focus:shadow-md dark:bg-zinc-900 dark:border-orange-600',
     };
 @endphp
 

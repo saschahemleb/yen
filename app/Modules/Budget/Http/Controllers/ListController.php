@@ -2,7 +2,9 @@
 
 namespace Yen\Modules\Budget\Http\Controllers;
 
-class ListController
+use Yen\Http\Controllers\Controller;
+
+class ListController extends Controller
 {
     public function show()
     {

@@ -16,6 +16,12 @@ return Application::configure(basePath: dirname(__DIR__))
             guests: fn() => '/',
             users: fn() => route('app::dashboard'),
         );
+
+        $middleware->web(
+            append: [
+                \Yen\Modules\Transaction\Http\Middlewares\ShareImportStatus::class,
+            ],
+        );
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //
