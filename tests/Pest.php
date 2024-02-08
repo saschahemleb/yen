@@ -13,8 +13,7 @@
 
 uses(
     Tests\TestCase::class,
-    // Illuminate\Foundation\Testing\RefreshDatabase::class,
-)->in('Feature');
+)->in('Feature', __DIR__ . '/../app/Modules/*/Tests/');
 
 /*
 |--------------------------------------------------------------------------
