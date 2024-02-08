@@ -4,6 +4,8 @@ test('modules', function () {
     modules()->each(function ($module) {
         expect("Yen\\Modules\\{$module}\\Http\\Controllers")
             ->toExtend(\Yen\Http\Controllers\Controller::class)
+            ->and("Yen\\Modules\\{$module}\\Http\\Middlewares")
+            ->toExtend(\Yen\Http\Middlewares\Middleware::class)
             ->and("Yen\\Modules\\{$module}\\Console\Commands")
             ->toExtend(\Yen\Console\Commands\Command::class)
             ->and("Yen\\Modules\\{$module}\\Models")

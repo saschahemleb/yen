@@ -8,6 +8,9 @@ use Illuminate\Http\Response;
 
 abstract class Middleware
 {
-    public function handle(Request $request, Closure $next): mixed {}
+    public function handle(Request $request, Closure $next): mixed
+    {
+        return $next($request);
+    }
     public function terminate(Request $request, Response $response): void {}
 }
