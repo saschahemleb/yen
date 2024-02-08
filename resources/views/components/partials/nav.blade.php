@@ -9,7 +9,7 @@
         </x-partials.nav-link-group>
         <x-partials.nav-link-group>
             <x-partials.nav-link :href="route('transaction::list')">{{ __('Transactions') }}</x-partials.nav-link>
-            <x-partials.nav-link :href="route('budget::list')">{{ __('Budgets') }}</x-partials.nav-link>
+{{--            <x-partials.nav-link :href="route('budget::list')">{{ __('Budgets') }}</x-partials.nav-link>--}}
         </x-partials.nav-link-group>
     </div>
 </nav>
